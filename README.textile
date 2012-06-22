@@ -1,0 +1,29 @@
+h1. super_profile
+
+enhanced speed profile formats for rspec and cucumber
+
+super_profile is a set of formatters for "rspec":https://github.com/rspec/rspec and "Cucumber":https://github.com/aslakhellesoy/cucumber  that display the execution times of tests/features and files, sorted by runtime, regardless of sucess/failure of tests/features.
+
+h2. Installation
+
+Installing super_profile is easy. Just put it in your @Gemfile@
+
+bc. gem 'super_profile'
+
+run @bundle install@
+
+If you don't user Bundler you can install it using the @gem@ command:
+
+bc. $ gem install fuubar-cucumber
+
+You can now run your features like this:
+
+bc. $ cucumber --format SuperProfile
+
+and your specs like this:
+
+bc. $ rspec spec --format SuperProfile
+
+If you want to use SuperProflie as your default formatter, simply put the option in your @cucumber.yml@ file:
+
+bc. --format SuperProfile
