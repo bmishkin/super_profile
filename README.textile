@@ -1,6 +1,6 @@
 h1. super_profile
 
-enhanced speed profile formats for rspec and cucumber
+enhanced speed profile formatters for rspec and cucumber
 
 super_profile is a set of formatters for "rspec":https://github.com/rspec/rspec and "Cucumber":https://github.com/aslakhellesoy/cucumber  that display the execution times of tests/features and files, sorted by runtime, regardless of sucess/failure of tests/features.
 
@@ -14,7 +14,7 @@ run @bundle install@
 
 If you don't user Bundler you can install it using the @gem@ command:
 
-bc. $ gem install fuubar-cucumber
+bc. $ gem install super_profile
 
 You can now run your features like this:
 
